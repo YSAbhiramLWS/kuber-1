@@ -15,19 +15,35 @@ Architecture:-
 9) Verified connection among them.
 
 Commands used:
+
 docker ps
+
 docker build -t smo-server . (build server image)
+
 docker images 
+
 docker run -p 8080:8080 smo-server (image to container)
+
 curl.exe http://localhost:8080 (testing the server)
+
 docker stop <container-id>
+
 kubectl get nodes (check kubernetes nodes)
+
 kubectl apply -f server-pod.yaml (apply pods)
+
 kubectl get pods (check pods)
+
 kubectl get pod -o wide (check pods in detail)
+
 kubectl apply -f server-service.yaml (apply service)
+
 kubectl get service (check service)
+
 kubectl get endpoints server-service (check endpoints of service)
+
 docker build -t smo-client . (build client image)
+
 kubectl logs client1-pod (verify client 1 communication)
+
 kubectl logs smo-server-pod (check communication from server side)
