@@ -1,24 +1,8 @@
 Establishment of connection between 2 clients and 1 server within the same Kubernetes cluster(environment) and same node. 
 
 Architecture:-
-                    Kubernetes Cluster
-                           │
-              ┌────────────┴────────────┐
-              │                         │
-         client1-pod               client2-pod
-              │                         │
-              │    HTTP request         │
-              └──────────┬──────────────┘
-                         ▼
-                  server-service
-                    :8080
-                         │
-                         ▼
-                  smo-server-pod
-                    :8080
-                         │
-                         ▼
-              Hello from SMO Server!
+<img width="294" height="374" alt="image" src="https://github.com/user-attachments/assets/0bd7ac98-9e84-4b71-8d6c-9fc2d9755229" />
+
 
 1) A server is developed and tested.
 2) Server -> Docker image(with the help of Dockerfile)
