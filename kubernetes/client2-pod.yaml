@@ -1,0 +1,11 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: client2-pod
+
+spec:
+  containers:
+    - name: client2-container
+      image: smo-client:latest

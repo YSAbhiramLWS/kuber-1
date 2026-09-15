@@ -1,0 +1,15 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: smo-server-pod
+  labels:
+    app: smo-server
+
+spec:
+  containers:
+    - name: smo-server-container
+      image: smo-server:latest
+      ports:
+        - containerPort: 8080
